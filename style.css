@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    font-family:Georgia, serif;
+    background:white;
+}
+
+/* CANVAS */
+
+canvas{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* MENU */
+
+#menu{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:rgba(255,255,255,0.2);
+    z-index:100;
+}
+
+#menu h1{
+    font-size:80px;
+    color:#4b2e1e;
+    margin-bottom:40px;
+}
+
+#playBtn{
+    padding:20px 70px;
+    font-size:30px;
+    border:none;
+    border-radius:12px;
+    background:#8b4513;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#playBtn:hover{
+    transform:scale(1.1);
+}
+
+/* SCORE */
+
+#scoreBox{
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-size:35px;
+    color:#4b2e1e;
+    z-index:50;
+}
+
+/* HIGH SCORE */
+
+#highScoreBox{
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:25px;
+    color:#4b2e1e;
+}
+
+/* GAME OVER */
+
+#gameOver{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:200;
+    color:white;
+}
+
+#gameOver h2{
+    font-size:80px;
+    margin-bottom:30px;
+}
+
+#gameOver button{
+    padding:20px 60px;
+    font-size:25px;
+    border:none;
+    border-radius:12px;
+    background:#8b4513;
+    color:white;
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    #menu h1{
+        font-size:45px;
+        text-align:center;
+    }
+
+    #playBtn{
+        font-size:22px;
+        padding:15px 40px;
+    }
+
+    #scoreBox{
+        font-size:25px;
+    }
+
+    #highScoreBox{
+        font-size:18px;
+    }
+
+}
